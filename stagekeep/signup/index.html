@@ -69,9 +69,6 @@
 										<label>
 											<input class="login-field" autocomplete="no" type="password" placeholder="Confirm Password" name="confirm" value="">
 										</label>
-										<label>
-											<input class="login-field" autocomplete="no" type="password" placeholder="Invite Code" name="invite_code" value="">
-										</label>
 										<div id="error" class="alert alert-danger" style="display: none">Error</div>
 										<div id="success" class="alert alert-success" style="display: none">
 											You've signed up for StageKeep, please return to the app.
@@ -158,7 +155,6 @@
 					username: $("input[name=username]").val(),
 					initials: $("input[name=initials]").val(),
 					password: $("input[name=password]").val(),
-					invite_code: $("input[name=invite_code]").val(),
 					captcha: $("#g-recaptcha-response").val(),
 				}),
 				contentType: 'application/json',
